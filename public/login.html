@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -16,7 +16,7 @@
       <h1 class="text-center">Login Here</h1>
 
       <div class="form-control">
-        <form action="/login" class="form-div">
+        <form action="/login" method="post" class="form-div" id="loginForm">
           <div class="email">
             <label for="email">Email Address:</label>
             <input
@@ -42,8 +42,13 @@
           <button class="form-btn" type="submit">Login</button>
         </form>
       </div>
+
+      <div id="dynamic-container">
+        <!-- login.html -->
+        <div id="error-container"></div>
+      </div>
     </section>
 
-    <script src="/public/js/index.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>

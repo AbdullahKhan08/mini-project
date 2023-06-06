@@ -16,7 +16,12 @@
       <h1 class="text-center">User Registration</h1>
 
       <div class="form-control">
-        <form action="/register" class="form-div" id="registrationForm">
+        <form
+          action="/register"
+          method="post"
+          class="form-div"
+          id="registrationForm"
+        >
           <div class="email">
             <label for="email">Email Address:</label>
             <input
@@ -42,8 +47,19 @@
           <button class="form-btn" type="submit">Register</button>
         </form>
       </div>
+
+      <div id="registerMessageContainer"></div>
+
+      <div class="register-container">
+        <span
+          >Already have an account?
+          <button class="btn">
+            <a class="navLinks registerbtn" href="./login.html">Login here</a>
+          </button></span
+        >
+      </div>
     </section>
 
-    <script src="/public/js/index.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
